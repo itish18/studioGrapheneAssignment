@@ -1,0 +1,104 @@
+.container{
+    background: #1A1A1A;
+    padding: 15px 90px;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    color: #626262;
+}
+
+.policyBox{
+   display: flex;
+   gap: 14px;
+   align-items: center;
+   font-size: 12px;
+   font-weight: 400;
+   
+}
+
+.commonLinks{
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.delivery{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.delivery>img{
+    height: 20px;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
+
+.line{
+    height: 100%;
+    width: 1px;
+    background: #626262;
+}
+
+.links{
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+
+.login{
+    display: flex;
+    gap:35px;
+    font-size: 12px;
+}
+
+.socialIconList{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.socialLinks{
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.image{
+    height: 12px;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
+
+@media screen and (max-width:768px) {
+    .container{
+        padding: 15px 20px;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .container{
+        padding: 15px 20px;
+       
+    }
+
+    .policyBox{
+        gap: 8px;
+        font-size: 10px;
+    }
+
+    .login{
+        font-size: 10px;
+    }
+
+    .followUs{
+        display: none;
+    }
+    
+    .image{
+        height: 10px;
+    }
+
+    .links{
+        align-items: center;
+    }
+}
+

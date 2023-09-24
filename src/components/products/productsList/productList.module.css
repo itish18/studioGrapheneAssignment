@@ -1,0 +1,14 @@
+.container{
+    display: flex;
+    gap: 30px;
+   max-width: 79vw;
+   overflow: hidden;
+}
+
+@media screen and (max-width:768px) {
+    .container{
+        gap: 50px;
+        max-width: 100%;
+    }
+}
+

@@ -1,0 +1,138 @@
+.container{
+    color: white;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+   
+}
+
+.heading>h2{
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.cart{
+    display: flex;
+    gap: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.hamContainer{
+  width: 24px;
+  height: 24px;
+  display: none;
+}
+
+.hamburger{
+  max-width: 100%;
+  max-height: 100%;
+  display: none;
+}
+
+.lineImage{
+    height: 18px;
+}
+
+.navbar {
+    list-style: none;
+    padding-left: 50px;
+    display: flex;
+    gap: 100px;
+    margin-top: 10px;
+  }
+  
+  .navItem {
+    position: relative;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 18px;
+   border-bottom: 1px solid transparent;
+   text-transform: uppercase;
+ 
+  }
+  
+  .navItemRelative {
+    position: relative;
+  }
+  
+  .subnav {
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    width: 100%;
+    border-top: none;
+  }
+  
+  .subnav li {
+    padding: 10px;
+  }
+  
+
+ .addNavBorder{
+  border-color: white;
+ }
+
+ .productBorder{
+  border-width: 1px 1px 0px 1px;
+  border-color: white;
+  border-style: solid;
+ }
+
+ .line{
+  height: 1px;
+  width: 100%;
+  background: white;
+display: none;
+ }
+
+ @media screen and (max-width:768px) {
+  .heading>h2{
+    font-size: 30px;
+    font-weight: lighter;
+  }
+
+  .cart{
+    display: none;
+  }
+
+  .lineImage{
+    display: none;
+  }
+
+  .line{
+    display: block;
+    margin-top: 2px;
+  }
+
+  .navbar{
+    display: none;
+  }
+
+  .heading{
+    align-items: center;
+  }
+
+  .hamContainer{
+    display: block;
+  }
+
+  .hamburger{
+    display: block;
+  }
+
+ }
+
+ 
+

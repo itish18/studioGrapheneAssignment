@@ -1,0 +1,20 @@
+.container {
+    height: 84.2vh;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    color: white;
+    list-style: none;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+  }

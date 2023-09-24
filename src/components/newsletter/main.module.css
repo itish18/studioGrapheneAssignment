@@ -1,0 +1,112 @@
+.container{
+    padding: 70px 100px;
+    background-image: url('D:\Web Development\studioassignment\public\bgImage.png');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    color: white;
+  
+}
+
+.inputContainer{
+    display: flex;
+    gap:150px;
+    align-items: flex-start;
+}
+
+.headings{
+    font-weight: 600;
+    font-size: 26px;
+    color: grey;
+ 
+}
+
+.headings>p{
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.inputBox{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.submit{
+    font-size: 135px;
+    font-weight: 800;
+    margin-top: 40px;
+    position: relative;
+   
+   
+}
+
+.get{
+  margin-bottom: -60px;
+}
+
+.submitButton{
+    position: absolute;
+    right: 450px;
+    top:0;
+    border:1px solid #F07E15;
+    font-size: 26px;
+    font-weight: 400;
+    padding: 80px 60px;
+    border-radius: 100%;
+    background: none;
+    color: #F07E15;
+    cursor: pointer;
+}
+
+@media screen and (max-width:768px) {
+    .inputContainer{
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .headings{
+        text-align: center;
+        max-width: 50%;
+    }
+
+    .headings>p{
+        margin-top: 10px;
+    }
+
+    .submit{
+        font-size: 80px;
+    }
+
+    .get{
+        margin-bottom: 0px;
+    }
+
+    .submitButton{
+        right: 40px;
+        top: 40px;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .container{
+        padding: 60px 40px;
+    }
+
+    .headings{
+        max-width: 100%;
+    }
+
+    .submit{
+        font-size: 50px;
+    }
+
+    .submitButton{
+        padding:  60px 50px;
+        font-size: 20px;
+        right: -30px;
+        top: -10px;
+    }
+}

@@ -1,0 +1,42 @@
+.customInput{
+    position: relative;
+    margin-bottom: 20px;
+    width: 60%;
+  }
+  
+  .inputField {
+    width: 100%;
+    padding:10px;
+    border: none;
+    border-bottom: 1px solid grey; 
+    outline: none;
+    font-size: 16px;
+    background: none;
+    color: white;
+  }
+
+  .inputLabel{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    transition: transform 0.3s ease; 
+    font-size: 18px;
+    font-weight: 400;
+    color: grey;
+    text-transform: uppercase;
+  }
+  
+  .focused .inputLabel {
+    transform: translateY(-30px); 
+  }
+
+  .errorMessage{
+    margin-top: 5px;
+    color: red;
+  }
+
+  @media screen and (max-width:768px) {
+    .customInput{
+      width: 100%;
+    }
+}

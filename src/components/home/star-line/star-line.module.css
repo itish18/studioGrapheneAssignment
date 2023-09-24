@@ -1,0 +1,35 @@
+.lineContainer{
+    display: flex;
+    align-items: center;
+  
+}
+
+.line{
+    height: 1px;
+    background: white;
+    width: 54%;
+    position: absolute;
+    left: 0px;
+    bottom: 150px;
+}
+
+
+
+.star{
+    width: 64px;
+    height: 90px;  
+    position: absolute;
+    left: 53%;
+    bottom:105px;
+}
+
+@media screen and (max-width:425px) {
+    .line{
+        width: 40%;
+    }   
+    .star{
+        left: 35%;
+        bottom: 106px;
+    }
+   
+}

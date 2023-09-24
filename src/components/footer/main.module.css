@@ -1,0 +1,9 @@
+.container{
+    background: black;
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+    font-size: 12px;
+    padding: 24px 0px;
+    color: white;
+}

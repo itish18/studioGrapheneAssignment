@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import { Header } from "./components/header/header";
+import { Home } from "./components/home/main";
+import { NewProducts } from "./components/products/main";
+import { NewsLetter } from "./components/newsletter/main";
+import { Footer } from "./components/footer/main";
+import { Modal } from "./components/modal/modal";
+
+import { useState } from "react";
 
 function App() {
+  const [showModal, setShowModal] = useState(false);
+
+  const toggleModal = () => {
+    setShowModal((prev) => !prev);
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <Home showModal={showModal} toggleModal={toggleModal} />
+      {showModal && <Modal />}
+      {!showModal && (
+        <>
+          <NewProducts />
+          <NewsLetter />
+          <Footer />
+        </>
+      )}
+    </>
   );
 }
 
